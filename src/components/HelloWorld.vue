@@ -25,6 +25,9 @@ export default {
       //TODO: Check our currently configured players for their url definitions
       //TODO: Clean up
       var players = require("../utils/players.json")
+      if(!this.urlCandidate.endsWith("/")){
+        this.urlCandidate = this.urlCandidate+"/"
+      }
       var x = parse_url(this.urlCandidate)
       var typeOf = NaN
       players.players.forEach(element => {

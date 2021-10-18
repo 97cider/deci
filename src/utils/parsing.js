@@ -1,5 +1,5 @@
 export function parse_url(url){
-    var url_regex = new RegExp("(?<=//).*(?=/)")
+    var url_regex = new RegExp("(?<=//)(.*?)(?=/)")
     try{
         var words = url_regex.exec(url)
         var first_match = words[0]
