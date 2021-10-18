@@ -3,15 +3,18 @@
     <img alt="Vue logo" src="./assets/the_dollar.jpg">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <Counter/>
+    <SoundCloudPlayer/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import SoundCloudPlayer from './components/media-player/players/SoundCloudPlayer.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    SoundCloudPlayer
   }
 }
 </script>
