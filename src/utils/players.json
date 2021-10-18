@@ -1,0 +1,20 @@
+{
+    "players":[
+        {
+            "name": "Soundcloud",
+            "urls": [
+                "soundcloud.com"
+            ],
+            "otherParam1":"otherVal1"
+        },
+        {
+            "name": "Youtube",
+            "urls": [
+                "www.youtube.com",
+                "youtube.com",
+                "youtu.be"
+            ],
+            "otherParam1":"otherVal1"
+        }
+    ]
+}

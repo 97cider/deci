@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import { parse_url } from "../utils/parsing.js"
 export default {
   name: 'HelloWorld',
   data: function () {
@@ -21,7 +22,17 @@ export default {
   methods: {
     validateURL : function ()
     {
-      alert(this.urlCandidate);
+      //TODO: Check our currently configured players for their url definitions
+      //TODO: Clean up
+      var players = require("../utils/players.json")
+      var x = parse_url(this.urlCandidate)
+      var typeOf = NaN
+      players.players.forEach(element => {
+        if (element.urls.includes(x)){
+          typeOf = element.name
+        }
+      });
+      this.urlCandidate = typeOf
     }
   }
 }
